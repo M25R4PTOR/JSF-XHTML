@@ -1,0 +1,29 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head />
+
+	<h:body>
+
+		<p:menubar>
+			<p:menuitem value="Correo" url="correo.xhtml" icon="ui-icon-gear" />
+			<p:submenu label="Galerias" icon="ui-icon-document">
+				<p:menuitem value="Galeria" url="galeria.xhtml"
+					icon="ui-icon-document" />
+				<p:menuitem value="ContentFlow" url="contentFlow.xhtml"
+					icon="ui-icon-document" />
+				<p:menuitem value="Media" url="media.xhtml" icon="ui-icon-document" />
+			</p:submenu>
+			<p:menuitem value="Informacion" url="informacion.xhtml"
+				icon="ui-icon-document" />
+			<p:menuitem value="Salir" url="helloworld.xhtml" icon="ui-icon-power" />
+		</p:menubar>
+
+		<ui:insert name="general_content" />
+
+	</h:body>
+
+</ui:composition>
